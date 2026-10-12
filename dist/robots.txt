@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ticketwalabd.com/sitemap.xml
