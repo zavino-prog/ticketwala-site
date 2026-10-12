@@ -1,0 +1,18 @@
+{
+  "name": "ticketwala-site",
+  "version": "1.0.0",
+  "description": "Ticket Wala static landing page for Cloudflare Workers Static Assets",
+  "scripts": {
+    "check:cloudflare": "wrangler deploy --dry-run",
+    "deploy:cloudflare": "wrangler deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zavino-prog/ticketwala-site.git"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "wrangler": "^4.149.0"
+  },
+  "private": true
+}

@@ -17,11 +17,20 @@ Open http://127.0.0.1:4173. No installation or build step is required. All produ
 
 The enquiry buttons link directly to WhatsApp or the Facebook page. WhatsApp messages are prefilled drafts, never sent automatically. There is no checkout, booking engine, contact form, analytics tracker, or database.
 
-## Hosting
+## Cloudflare hosting
 
-Upload the contents of `dist/` to the root of the domain on any static host. Set `ticketwalabd.com` and `www.ticketwalabd.com` in the chosen host, configure the DNS records supplied by that host, enable HTTPS, and redirect www to the canonical non-www domain. DNS has not been changed by this project.
+This site is deployed as a Cloudflare Worker with Static Assets on Thezavino@gmail.com's account (`8656609e75eaae00525a5709b8f58dc0`). The local Wrangler configuration is `wrangler.jsonc`. Static files remain in `dist/`; there is no build step.
 
-`.openai/hosting.json` identifies the private Sites publication separately. Publishing to Sites does not connect the custom domain. Canonical metadata, Open Graph URLs, robots.txt, and sitemap.xml are prepared for the intended custom domain. `_headers` is understood by compatible static hosts; configure equivalent headers manually elsewhere. Assets use a one-week cache policy and must be invalidated or renamed when replaced.
+- Install: `npm ci`
+- Validate package: `npm run check:cloudflare`
+- Deploy: `npm run deploy:cloudflare`
+- Worker: `ticketwala-bd`
+- Public Worker URL: https://ticketwala-bd.thezavino.workers.dev/
+- Configured custom domains: `ticketwalabd.com` and `www.ticketwalabd.com`.
+
+The domain is registered at Namecheap. Its authoritative nameservers are `chase.ns.cloudflare.com` and `paityn.ns.cloudflare.com`, matching the active zone on the same Cloudflare account. Both custom domains returned HTTP 200 over HTTPS on 12 October 2026. Canonical metadata, Open Graph URLs, robots.txt, and sitemap.xml target the apex domain. `_headers` is applied by Workers Static Assets; the logo's cache header was verified on the custom domain.
+
+The prior private OpenAI Sites publication has a separate identity in `.openai/hosting.json`. The Cloudflare Worker is the intended public host.
 
 ## Design and performance
 

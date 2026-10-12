@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ticketwala-bd",
+  "account_id": "8656609e75eaae00525a5709b8f58dc0",
+  "compatibility_date": "2026-10-12",
+  "workers_dev": true,
+  "routes": [
+    { "pattern": "ticketwalabd.com", "custom_domain": true },
+    { "pattern": "www.ticketwalabd.com", "custom_domain": true }
+  ],
+  "assets": {
+    "directory": "./dist"
+  }
+}
