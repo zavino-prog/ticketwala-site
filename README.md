@@ -13,7 +13,7 @@ Open http://127.0.0.1:4173. No installation or build step is required. All produ
 - WhatsApp: +880 1867-043635, confirmed by the client in this chat.
 - Facebook: https://www.facebook.com/profile.php?id=61554364170993
 - Email displayed: ticketwala84@gmail.com
-- Address: House 73, Road 2, Block C, Bashundhara R/A, Dhaka 1229.
+- Address: House 76, Road 5, Block D, Bashundhara R/A, Dhaka 1229, supplied by the client on 13 October 2026.
 
 The enquiry buttons link directly to WhatsApp or the Facebook page. WhatsApp messages are prefilled drafts, never sent automatically. There is no checkout, booking engine, contact form, analytics tracker, or database.
 

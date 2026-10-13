@@ -22,6 +22,8 @@ Inspected in the browser: page identity, introduction, contact details, cover ar
 - The user provided the replacement logo and explicitly confirmed that the public phone number is also the WhatsApp number.
 - The requested production domain is ticketwalabd.com, superseding the old domain in the Facebook cover.
 
+On 13 October 2026, the client supplied an updated address for the website: House 76, Road 5, Block D, Bashundhara R/A, Dhaka 1229. The earlier address above remains the historical Facebook audit finding, not the current site address.
+
 ## Findings and implementation
 
 1. Brand consistency: existing Facebook art differs from the client's supplied mark. The site uses the supplied TicketWala logo and its navy/blue/orange palette. Updating the Facebook profile and cover would help the handoff feel consistent; no Facebook changes were made.
